@@ -132,7 +132,7 @@ export default function Post() {
 
           {/* Btns */}
           <motion.div layout className="flex justify-between items-center px-1">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2.5">
               <button onClick={() => setLike(!like)}>
                 <Heart
                   className={clsx(
@@ -142,9 +142,9 @@ export default function Post() {
                 />
               </button>
               <button
-                className="cursor-pointer"
+                className="cursor-pointer mt-1 cen"
                 onClick={() => setShowComments(!showComments)}>
-                <MessageSquareIcon />
+                <MessageSquareIcon /> {comments.length}
               </button>
               <button>
                 <Send className="hover:rotate-45 cursor-pointer transition-all" />
